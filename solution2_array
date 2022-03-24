@@ -1,0 +1,12 @@
+def main():
+    grade =["F", "D", "C", "B", "A"]
+    score = eval(input ("please enter the student's CS score:"))
+    # 取分數商數
+    transformS = (score//10)-5
+    if transformS > 4:
+        transformS = 4
+    elif transformS < 0:
+        transformS = 0
+    print(grade[transformS])
+main()
+input()
